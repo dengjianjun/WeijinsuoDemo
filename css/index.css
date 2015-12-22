@@ -153,12 +153,12 @@ body{
 /*********************移动版nav部分样式结束*********************/
 
 /*********************banner部分样式开始*********************/
-
-.dv-banner{
-    cursor: pointer;
+.dv-banner:hover .carousel-control{
+    display: block;
 }
 
-.dv-banner:hover .carousel-control{
+#myCarousel .carousel-inner .item>a{
+    height: 100%;
     display: block;
 }
 
@@ -520,10 +520,6 @@ div#news_title {
     .dv-news{
         padding-left: 50px;
     }
-
-    #myCarousel .carousel-inner .item {
-        height: 320px;
-    }
 }
 
 @media screen and (max-width: 991px){
@@ -532,6 +528,19 @@ div#news_title {
     }
     .news-type>ul.nav.nav-tabs{
         border-bottom: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #myCarousel .carousel-inner .item {
+        height: 350px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+    #myCarousel .carousel-inner .item>img{
+        display: none;
     }
 }
 
@@ -560,5 +569,10 @@ div#news_title {
     }
     .loan-nav .nav.nav-tabs{
         width: 610px;
+    }
+
+    #myCarousel .carousel-inner .item>img{
+        display: block;
+        width: 100%;
     }
 }

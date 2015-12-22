@@ -56,6 +56,7 @@ $(function () {
         });
     });
 
+    //让工具提示生效
     $(function () { $("[data-toggle='tooltip']").tooltip(); });
 });
 
@@ -66,8 +67,8 @@ function reSetImage() {
     var imgs = $('#myCarousel .carousel-inner .item img');
     var srcType = width > 768 ? 'lg-src' : 'sm-src'
     $(imgs).each(function () {
-        var src=$(this).attr(srcType);
+        var src=$(this).data(srcType);
         $(this).attr('src', src);
-        //$(this).parent().css('backgroundImage','url(' + src + ')');
+        $(this).parent().css('backgroundImage','url(' + src + ')');
     });
 }
