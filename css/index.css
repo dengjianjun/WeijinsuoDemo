@@ -88,7 +88,6 @@ body{
     border: none;
 }
 
-
 .icon-logo::before{
     content: "\e920";
     color: #e9232c;
@@ -121,6 +120,11 @@ body{
 
 .dv-nav ul.nav.navbar-nav>li.active>a{
     background-color: #fff;
+}
+
+.dv-nav .navbar-static-top.affix{
+    top: 0;
+    width: 100%;
 }
 
 /*********************nav部分样式结束*********************/
@@ -173,13 +177,13 @@ body{
 .dv-banner .slide-left::before{
     content: url(../img/left-arrow.png);
     position: absolute;
-    top: 112px;
+    top: 155px;
 }
 
 .dv-banner .slide-right::before{
     content: url(../img/right-arrow.png);
     position: absolute;
-    top: 112px;
+    top: 155px;
 }
 
 
@@ -351,7 +355,7 @@ body{
 .loan-rate .loan-label{
     border: 1px solid #339999;
     padding: 0px 2px;
-    font-size: 7px;
+    font-size: 12px;
     margin-left: 3px;
     color: #339999;
     border-radius: 1px;
