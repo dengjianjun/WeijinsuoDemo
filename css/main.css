@@ -154,6 +154,10 @@ fieldset[disabled] .btn-itcast.active {
     content: "\e93e";
 }
 
+#web_nav{
+    margin-bottom: -1px;
+}
+
 #web_nav ul.navbar-nav > li {
     font-size: 18px;
 }
@@ -162,6 +166,7 @@ fieldset[disabled] .btn-itcast.active {
     background-color: #fff;
     border-bottom: 2px solid #E61E25;
     color: #424242;
+    padding-bottom:13px;
 }
 
 .menu-top {
@@ -218,6 +223,19 @@ fieldset[disabled] .btn-itcast.active {
 /*******************************网站导航样式结束*******************************/
 
 /*******************************广告轮播样式开始*******************************/
+#web_banner .carousel-inner .item>a{
+    width: 100%;
+    display: inline-block;
+}
+
+#web_banner .carousel-control{
+    display: none;
+}
+
+#web_banner .carousel-inner .item>img{
+    width: 100%;
+    height: auto;
+}
 
 /*******************************广告轮播样式结束*******************************/
 
@@ -252,4 +270,33 @@ fieldset[disabled] .btn-itcast.active {
         padding-left: 8px;
         padding-right: 0;
     }
+}
+
+@media screen and (min-width: 768px) {
+    #web_banner:hover .carousel-control{
+        display: block;
+    }
+
+    #web_banner .carousel-inner .item{
+        height: 350px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    #web_banner .carousel-inner .item>img{
+        display: none;
+    }
+
+    #web_banner .glyphicon-chevron-left::before{
+        content: url(../img/left-arrow.png);
+    }
+
+    #web_banner .glyphicon-chevron-right::before{
+        content: url(../img/right-arrow.png);
+    }
+}
+
+@media screen and (max-width: 767px) {
+
 }
