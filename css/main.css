@@ -8,7 +8,7 @@ a, a:hover {
 }
 
 ul {
-    padding-left: 40px;
+    padding-left: 0;
 }
 
 li {
@@ -154,14 +154,65 @@ fieldset[disabled] .btn-itcast.active {
     content: "\e93e";
 }
 
-#web_nav ul.navbar-nav>li{
+#web_nav ul.navbar-nav > li {
     font-size: 18px;
 }
 
-#web_nav ul.navbar-nav>li:hover a{
+#web_nav ul.navbar-nav > li:hover a {
     background-color: #fff;
     border-bottom: 2px solid #E61E25;
     color: #424242;
+}
+
+.menu-top {
+    height: 60px;
+    background-color: #F8F8F8;
+    padding: 18px;
+}
+
+#btn_menu::before {
+    content: "";
+    background: url(../img/menu.jpg) no-repeat;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-size: cover;
+}
+
+#btn_menu::after {
+    content: "导航";
+    display: inline-block;
+    position: absolute;
+    height: 26px;
+    font-size: 18px;
+}
+
+.menu-content {
+    margin-top: 60px;
+    background-image: url(../img/nav-mobi-bg.jpg);
+    color: #C9C9C9;
+    width: 240px;
+    height: 505px;
+    padding-top: 15px;
+    display: none;
+}
+
+.menu-content a {
+    color: #C9C9C9;
+}
+
+.menu-content ul + ul {
+    border-top: 1px solid;
+    padding-top: 20px;
+}
+
+.menu-content ul > li {
+    margin-top: 10px;
+}
+
+.menu-content ul > li > a > img {
+    margin-right: 5px;
+    height: 19px;
 }
 
 /*******************************网站导航样式结束*******************************/
@@ -191,7 +242,7 @@ fieldset[disabled] .btn-itcast.active {
 /*******************************网站尾部样式结束*******************************/
 
 @media screen and (min-width: 992px) {
-    #web_nav ul.navbar-nav>li:last-child{
+    #web_nav ul.navbar-nav > li:last-child {
         margin-left: 50px;
     }
 }
