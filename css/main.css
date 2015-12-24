@@ -25,7 +25,7 @@ li {
     font-style: normal;
 }
 
-.orange{
+.orange {
     color: #E61E25;
 }
 
@@ -158,7 +158,7 @@ fieldset[disabled] .btn-itcast.active {
     content: "\e93e";
 }
 
-#web_nav{
+#web_nav {
     margin-bottom: -1px;
 }
 
@@ -170,7 +170,7 @@ fieldset[disabled] .btn-itcast.active {
     background-color: #fff;
     border-bottom: 2px solid #E61E25;
     color: #424242;
-    padding-bottom:13px;
+    padding-bottom: 13px;
 }
 
 .menu-top {
@@ -227,16 +227,16 @@ fieldset[disabled] .btn-itcast.active {
 /*******************************网站导航样式结束*******************************/
 
 /*******************************广告轮播样式开始*******************************/
-#web_banner .carousel-inner .item>a{
+#web_banner .carousel-inner .item > a {
     width: 100%;
     display: inline-block;
 }
 
-#web_banner .carousel-control{
+#web_banner .carousel-control {
     display: none;
 }
 
-#web_banner .carousel-inner .item>img{
+#web_banner .carousel-inner .item > img {
     width: 100%;
     height: auto;
 }
@@ -244,37 +244,37 @@ fieldset[disabled] .btn-itcast.active {
 /*******************************广告轮播样式结束*******************************/
 
 /*******************************网站特色样式开始*******************************/
-.icon-uniE907::before{
+.icon-uniE907::before {
     content: "\e907";
 }
 
-#web_features{
+#web_features {
     padding-bottom: 25px;
     border-bottom: 1px solid #C6CBCF;
 }
 
-#web_features .media-middle{
+#web_features .media-middle {
     font-size: 25px;
 }
 
-#web_features>.container>.media{
+#web_features > .container > .media {
     display: block;
     margin-bottom: 20px;
     color: #333;
 }
 
-#web_features>.container>.media:hover{
+#web_features > .container > .media:hover {
     color: #E61E25;
 }
 
-#web_features>.container>.media:first-child{
+#web_features > .container > .media:first-child {
     margin-top: 15px;
 }
 
 /*******************************网站特色样式结束*******************************/
 
 /*******************************预约投标样式开始*******************************/
-.icon-clock::before{
+.icon-clock::before {
     content: "\e906";
     font-size: 25px;
     margin-right: 10px;
@@ -282,7 +282,7 @@ fieldset[disabled] .btn-itcast.active {
     top: 4px;
 }
 
-.icon-camera::before{
+.icon-camera::before {
     content: "\e905";
     font-size: 25px;
     margin-right: 10px;
@@ -290,29 +290,30 @@ fieldset[disabled] .btn-itcast.active {
     top: 3px;
 }
 
-#booking{
+#booking {
     padding-bottom: 20px;
     border-bottom: 1px solid #C6CBCF;
     padding-top: 15px;
 }
 
-.queick-order{
+.queick-order {
     border-bottom: 1px dashed #E61E25;
     margin-left: 10px;
     padding-bottom: 5px;
 }
 
-.trailer{
+.trailer {
     display: inline-block;
 }
 
-.trailer:hover{
+.trailer:hover {
     color: #E61E25;
 }
+
 /*******************************预约投标样式结束*******************************/
 
 /*******************************投资列表样式开始*******************************/
-#invest_list{
+#invest_list {
     background-color: #F0F0F0;
 }
 
@@ -320,17 +321,22 @@ fieldset[disabled] .btn-itcast.active {
     margin-top: 30px;
 }
 
-#invest_list .nav-tabs > li>a{
+#invest_list .nav-tabs > li > a {
     border: none;
 }
 
-#invest_list .nav-tabs > li.active > a{
+#invest_list .nav-tabs > li.active > a {
     background-color: #f0f0f0;
     border-bottom: 3px solid #E61E25;
     padding-bottom: 7px;
 }
 
-.panel-itcast{
+.tab-content.loan-list {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.panel-itcast {
     display: block;
     background-color: #fff;
     height: 148px;
@@ -338,56 +344,81 @@ fieldset[disabled] .btn-itcast.active {
     box-shadow: 2px 2px 2px #d8d8d8;
 }
 
-.panel-itcast>.panel-heading,
-.panel-itcast>.panel-body{
+.panel-itcast > .panel-heading,
+.panel-itcast > .panel-body {
     height: 100%;
 }
 
-.panel-itcast>.panel-heading{
+.panel-itcast > .panel-heading {
     float: right;
     width: 108px;
-    border-left: 1px dashed;
+    border-left: 1px dashed #D5D5D5;
+    position: relative;
 }
 
-.panel-itcast>.panel-body{
-    overflow-y: hidden;
+.panel-itcast > .panel-body {
+    overflow: hidden;
     white-space: nowrap;
 }
 
-.panel-itcast>.panel-body sub,
-.panel-itcast>.panel-heading sub{
+.panel-itcast > .panel-body sub,
+.panel-itcast > .panel-heading sub {
     position: relative;
     bottom: 0;
-    font-weight:normal;
-}
-
-.panel-itcast dl{
-    margin-bottom: 10px;
-}
-
-.panel-itcast dl>dt{
     font-weight: normal;
 }
 
-.panel-itcast .panel-body{
+.panel-itcast dl {
+    margin-bottom: 10px;
+}
+
+.panel-itcast dl > dt {
+    font-weight: normal;
+}
+
+.panel-itcast .panel-body dl > dt {
+    font-size: 12px;
+}
+
+.panel-itcast .panel-body {
     padding: 15px 0;
 }
 
-.panel-itcast .panel-body dl>dd{
-    font-size:16px;
+.panel-itcast .panel-heading::before, .panel-itcast .panel-heading::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #F0F0F0;
+    display: block;
+    position: absolute;
+    border-radius: 6px;
+    left: -6px;
 }
 
-.panel-itcast .panel-heading dl>dd{
+.panel-itcast .panel-heading::before {
+    top: -5px;
+}
+
+.panel-itcast .panel-heading::after {
+    bottom: -6px;
+}
+
+.panel-itcast .panel-body dl > dd {
+    font-size: 16px;
+}
+
+.panel-itcast .panel-heading dl > dd {
     font-size: 14px;
 }
 
-.panel-itcast h4{
+.panel-itcast h4 {
     margin-top: 0;
-    margin-bottom: 10px;
-    font-size:16px;
+    margin-bottom: 7px;
+    font-size: 16px;
+    margin-left: 13px;
 }
 
-.panel-itcast>.panel-heading .tip{
+.panel-itcast > .panel-heading .tip {
     border: 1px solid;
     padding: 0 3px;
     margin-left: 2px;
@@ -395,14 +426,42 @@ fieldset[disabled] .btn-itcast.active {
     border-radius: 2px;
 }
 
-.panel-itcast>.panel-heading dt{
-font-size: 30px;
-font-weight: bold;
-color: #e61e25;
+.panel-itcast > .panel-heading dt {
+    font-size: 30px;
+    font-weight: bold;
+    color: #e61e25;
 }
 
-.panel-itcast>.panel-heading dl{
+.panel-itcast > .panel-heading dl {
 
+}
+
+#invest_list .glyphicon.light {
+    color: #BDC3C7;
+}
+
+#invest_list dd.progress{
+    height: 10px;
+}
+
+.progress-bar-itcast {
+    background-color: #878787;
+}
+
+.icon-zx::before{
+    content: "\e917";
+    position: absolute;
+    font-size: 30px;
+    top: -6px;
+    color: #e61e25;
+}
+
+.compeleted{
+    background-color: #E6E6E6;
+    background-image: url(../img/loan-status-5.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100px 100px;
 }
 
 /*******************************投资列表样式结束*******************************/
@@ -429,26 +488,26 @@ color: #e61e25;
 }
 
 @media screen and (min-width: 768px) {
-    #web_banner:hover .carousel-control{
+    #web_banner:hover .carousel-control {
         display: block;
     }
 
-    #web_banner .carousel-inner .item{
+    #web_banner .carousel-inner .item {
         height: 350px;
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
     }
 
-    #web_banner .carousel-inner .item>img{
+    #web_banner .carousel-inner .item > img {
         display: none;
     }
 
-    #web_banner .glyphicon-chevron-left::before{
+    #web_banner .glyphicon-chevron-left::before {
         content: url(../img/left-arrow.png);
     }
 
-    #web_banner .glyphicon-chevron-right::before{
+    #web_banner .glyphicon-chevron-right::before {
         content: url(../img/right-arrow.png);
     }
 }
