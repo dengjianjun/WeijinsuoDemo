@@ -9,12 +9,12 @@ $(function () {
     $(window).on('resize', function () {
         //浏览器宽度
         var windowWidth=$(window).width();
-        var imgSrc=windowWidth>768?'lg-src':'sm-src';
+        var imgSrc=windowWidth>=768?'lg-src':'sm-src';
         var imgs= $('#web_banner .carousel-inner .item>img');
         $(imgs).each(function () {
             var src=$(this).data(imgSrc);
             $(this).attr('src',src);
-            $(this).parent().css('backgroundImage',windowWidth>768?'url('+src+')':'');
+            $(this).parent().css('backgroundImage',windowWidth>=768?'url('+src+')':'');
         })
     }).trigger('resize');
 

@@ -238,6 +238,32 @@ fieldset[disabled] .btn-itcast.active {
 }
 
 /*******************************广告轮播样式结束*******************************/
+.icon-uniE907::before{
+    content: "\e907";
+}
+
+#web_features{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #C6CBCF;
+}
+
+#web_features .media-middle{
+    font-size: 25px;
+}
+
+#web_features>.container>.media{
+    display: block;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#web_features>.container>.media:hover{
+    color: #E61E25;
+}
+
+#web_features>.container>.media:first-child{
+    margin-top: 15px;
+}
 
 /*******************************网站特色样式开始*******************************/
 
