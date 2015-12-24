@@ -1,54 +1,204 @@
-body{
-    font-family:"Microsoft YaHei",Tahoma,Helvetica;
+body {
+    font-family: "Microsoft YaHei", Tahoma, Helvetica;
 }
 
-a,a:hover{
+a, a:hover {
     text-decoration: none;
+    color: #878787;
 }
 
-ul{
+ul {
     padding-left: 40px;
 }
 
-li{
+li {
     list-style: none;
 }
 
+@font-face {
+    font-family: Itcast;
+    src: url(../fonts/MiFie-Web-Font.ttf) format("truetype");
+}
+
+[class^=icon-], [class*=" icon-"] {
+    font-family: Itcast;
+    font-style: normal;
+}
+
 /*******************************网站头部样式开始*******************************/
+#header {
+    border-bottom: 1px solid #C6CBCF;
+}
+
+#header > .container {
+    height: 41px;
+    line-height: 41px;
+    color: #8D8D8D;
+    font-size: 12px;
+}
+
+#header > .container > .row > div + div {
+    border-left: 1px solid #C6CBCF;
+}
+
+#header > .container a {
+    color: #8D8D8D;
+    height: 100%;
+    display: inline-block;
+}
+
+.icon-mobilephone::before {
+    content: "\e908";
+}
+
+.icon-arrow-down::before {
+    content: "\e90c";
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+.icon-telephone::before {
+    content: "\e909";
+}
+
+.btn-itcast {
+    color: #ffffff;
+    background-color: #E61E25;
+    border-color: #E61E25;
+}
+
+.btn-itcast:hover,
+.btn-itcast:focus,
+.btn-itcast:active,
+.btn-itcast.active,
+.open .dropdown-toggle.btn-itcast {
+    color: #ffffff;
+    background-color: #FF1E25;
+    border-color: #E61E25;
+}
+
+.btn-itcast:active,
+.btn-itcast.active,
+.open .dropdown-toggle.btn-itcast {
+    background-image: none;
+}
+
+.btn-itcast.disabled,
+.btn-itcast[disabled],
+fieldset[disabled] .btn-itcast,
+.btn-itcast.disabled:hover,
+.btn-itcast[disabled]:hover,
+fieldset[disabled] .btn-itcast:hover,
+.btn-itcast.disabled:focus,
+.btn-itcast[disabled]:focus,
+fieldset[disabled] .btn-itcast:focus,
+.btn-itcast.disabled:active,
+.btn-itcast[disabled]:active,
+fieldset[disabled] .btn-itcast:active,
+.btn-itcast.disabled.active,
+.btn-itcast[disabled].active,
+fieldset[disabled] .btn-itcast.active {
+    background-color: #E61E25;
+    border-color: #E61E25;
+}
+
+.btn-itcast .badge {
+    color: #E61E25;
+    background-color: #ffffff;
+}
+
+#header .hb-4 > .btn-itcast {
+    color: #fff;
+    padding: 3px 5px;
+    margin-right: 10px;
+}
+
+#header .hb-1 a:hover #header-wx {
+    display: block;
+}
+
+#header-wx {
+    display: none;
+    z-index: 1001;
+    position: absolute;
+}
 
 /*******************************网站头部样式结束*******************************/
 
-
 /*******************************网站导航样式开始*******************************/
+.navbar-itcast {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.icon-logo, .icon-logo2 {
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.icon-logo {
+    font-size: 50px;
+    color: #E61E25;
+}
+
+.icon-logo::before {
+    content: "\e920";
+}
+
+.icon-logo2 {
+    font-size: 32px;
+    color: #434243;
+}
+
+.icon-logo2::before {
+    content: "\e93e";
+}
+
+#web_nav ul.navbar-nav>li{
+    font-size: 18px;
+}
+
+#web_nav ul.navbar-nav>li:hover a{
+    background-color: #fff;
+    border-bottom: 2px solid #E61E25;
+    color: #424242;
+}
 
 /*******************************网站导航样式结束*******************************/
-
 
 /*******************************广告轮播样式开始*******************************/
 
 /*******************************广告轮播样式结束*******************************/
 
-
 /*******************************网站特色样式开始*******************************/
 
 /*******************************网站特色样式结束*******************************/
-
 
 /*******************************预约投标样式开始*******************************/
 
 /*******************************预约投标样式结束*******************************/
 
-
 /*******************************投资列表样式开始*******************************/
 
 /*******************************投资列表样式结束*******************************/
-
 
 /*******************************网站新闻样式开始*******************************/
 
 /*******************************网站新闻样式结束*******************************/
 
-
 /*******************************网站尾部样式开始*******************************/
 
 /*******************************网站尾部样式结束*******************************/
+
+@media screen and (min-width: 992px) {
+    #web_nav ul.navbar-nav>li:last-child{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #web_nav .nav > li > a {
+        padding-left: 8px;
+        padding-right: 0;
+    }
+}
