@@ -25,6 +25,10 @@ li {
     font-style: normal;
 }
 
+.orange{
+    color: #E61E25;
+}
+
 /*******************************网站头部样式开始*******************************/
 #header {
     border-bottom: 1px solid #C6CBCF;
@@ -292,10 +296,6 @@ fieldset[disabled] .btn-itcast.active {
     padding-top: 15px;
 }
 
-#booking .orange{
-    color: #E61E25;
-}
-
 .queick-order{
     border-bottom: 1px dashed #E61E25;
     margin-left: 10px;
@@ -330,6 +330,80 @@ fieldset[disabled] .btn-itcast.active {
     padding-bottom: 7px;
 }
 
+.panel-itcast{
+    display: block;
+    background-color: #fff;
+    height: 148px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px #d8d8d8;
+}
+
+.panel-itcast>.panel-heading,
+.panel-itcast>.panel-body{
+    height: 100%;
+}
+
+.panel-itcast>.panel-heading{
+    float: right;
+    width: 108px;
+    border-left: 1px dashed;
+}
+
+.panel-itcast>.panel-body{
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.panel-itcast>.panel-body sub,
+.panel-itcast>.panel-heading sub{
+    position: relative;
+    bottom: 0;
+    font-weight:normal;
+}
+
+.panel-itcast dl{
+    margin-bottom: 10px;
+}
+
+.panel-itcast dl>dt{
+    font-weight: normal;
+}
+
+.panel-itcast .panel-body{
+    padding: 15px 0;
+}
+
+.panel-itcast .panel-body dl>dd{
+    font-size:16px;
+}
+
+.panel-itcast .panel-heading dl>dd{
+    font-size: 14px;
+}
+
+.panel-itcast h4{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size:16px;
+}
+
+.panel-itcast>.panel-heading .tip{
+    border: 1px solid;
+    padding: 0 3px;
+    margin-left: 2px;
+    font-size: 13px;
+    border-radius: 2px;
+}
+
+.panel-itcast>.panel-heading dt{
+font-size: 30px;
+font-weight: bold;
+color: #e61e25;
+}
+
+.panel-itcast>.panel-heading dl{
+
+}
 
 /*******************************投资列表样式结束*******************************/
 

@@ -46,4 +46,7 @@ $(function () {
             $(this).carousel(startX > endX ? 'next' : 'prev');
         }
     });
+
+    //让工具提示起作用
+    $('[data-toggle="tooltip"]').tooltip();
 });
