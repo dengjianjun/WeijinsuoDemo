@@ -15,7 +15,8 @@ $(function () {
             var src=$(this).data(imgSrc);
             $(this).attr('src',src);
             $(this).parent().css('backgroundImage',windowWidth>=768?'url('+src+')':'');
-        })
+        });
+        resizeInvestNavWidth();
     }).trigger('resize');
 
     // 获取界面上的轮播图容器
@@ -49,4 +50,19 @@ $(function () {
 
     //让工具提示起作用
     $('[data-toggle="tooltip"]').tooltip();
+
 });
+
+//投资列表导航栏宽度调整
+function resizeInvestNavWidth(){
+    var liTab=$('#invest_list .nav-tabs>li');
+    var width=30;
+    liTab.each(function () {
+        width+=$(this).width();
+    });
+    if(width>$(window).width()){
+        liTab.parent().width(width);
+    }else{
+        liTab.parent().width('auto');
+    }
+}
