@@ -503,11 +503,8 @@ fieldset[disabled] .btn-itcast.active {
 #news_title{
 margin-top: 40px;
 margin-right: 10px;
-margin-left: 30px;
-padding-right: 10px;
-padding-bottom: 10px;
-border-bottom: 1px solid #8d8d8d;
-}
+margin-left: 30px;padding-right: 10px;padding-left: 10px;padding-bottom: 10px;
+border-bottom: 1px solid #8d8d8d;white-space: nowrap;}
 
 #news_title::before{
     content: "";
@@ -529,6 +526,19 @@ border-bottom: 1px solid #8d8d8d;
     font-size: 30px;
 }
 
+.news-content ul{
+    margin-top: 50px;
+}
+
+.news-item{
+    
+font-size: 15px;
+    
+margin-bottom: 20px;
+    
+color: #333;
+}
+
 /*******************************网站新闻样式结束*******************************/
 
 /*******************************网站尾部样式开始*******************************/
@@ -545,6 +555,11 @@ border-bottom: 1px solid #8d8d8d;
     #web_nav .nav > li > a {
         padding-left: 8px;
         padding-right: 0;
+    }
+
+    #news .nav-stacked>li{
+        float: left;
+        width: 25%;
     }
 }
 
