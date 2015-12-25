@@ -51,6 +51,25 @@ $(function () {
     //让工具提示起作用
     $('[data-toggle="tooltip"]').tooltip();
 
+    //保存点击后的新闻类型标题
+    var newsTitle='网站新闻';
+
+    //网站新闻激活标签页事件
+    $('#news a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        // 激活的标签页   e.target
+        // 前一个激活的标签页  e.relatedTarget
+        var title=$(e.target).data('title');
+        $('#news_title').text(title);
+        newsTitle=title;
+        //网站新闻标签页标题移入事件
+    }).on('mouseover', function () {
+        var title=$(this).data('title');
+        $('#news_title').text(title);
+        //网站新闻标签页标题移入事件
+    }).on('mouseleave', function () {
+        $('#news_title').text(newsTitle);
+    })
+
 });
 
 //投资列表导航栏宽度调整

@@ -441,7 +441,7 @@ fieldset[disabled] .btn-itcast.active {
     color: #BDC3C7;
 }
 
-#invest_list dd.progress{
+#invest_list dd.progress {
     height: 10px;
 }
 
@@ -449,7 +449,7 @@ fieldset[disabled] .btn-itcast.active {
     background-color: #878787;
 }
 
-.icon-zx::before{
+.icon-zx::before {
     content: "\e917";
     position: absolute;
     font-size: 30px;
@@ -457,7 +457,7 @@ fieldset[disabled] .btn-itcast.active {
     color: #e61e25;
 }
 
-.compeleted{
+.compeleted {
     background-color: #E6E6E6;
     background-image: url(../img/loan-status-5.png);
     background-repeat: no-repeat;
@@ -468,6 +468,66 @@ fieldset[disabled] .btn-itcast.active {
 /*******************************投资列表样式结束*******************************/
 
 /*******************************网站新闻样式开始*******************************/
+#news ul.nav-stacked > li > a {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #d0d0d0;
+    margin-top: 40px;
+    color: #fff;
+}
+
+#news ul.nav-stacked > li > a:hover {
+    background-color: #e61e25;
+}
+
+#news ul.nav-stacked > li.active > a {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #e61e25;
+}
+
+.news-split{
+    position: relative;
+}
+
+.news-split-line{
+    position: absolute;
+    border-left: 1px dashed #d0d0d0;
+    height: 300px;
+    top: 43px;
+    right: -43px;
+}
+
+#news_title{
+margin-top: 40px;
+margin-right: 10px;
+margin-left: 30px;
+padding-right: 10px;
+padding-bottom: 10px;
+border-bottom: 1px solid #8d8d8d;
+}
+
+#news_title::before{
+    content: "";
+    height: 8px;
+    width: 8px;
+    border: 1px solid;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    bottom: 7px;
+    right: 17px;
+}
+
+.icon-news1::before{
+    content: "\e90e";
+    position: absolute;
+    top: 7px;
+    right: 13px;
+    font-size: 30px;
+}
 
 /*******************************网站新闻样式结束*******************************/
 
