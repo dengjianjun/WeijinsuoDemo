@@ -544,15 +544,17 @@ color: #333;
 /*******************************网站尾部样式开始*******************************/
 #footer{
 border-top: 1px solid #808080;
+    overflow: hidden;
 }
 
-#footer ul>li,#footer dl>dd{
+#footer a,#footer dl>dd{
     float: left;
     margin-right: 10px;
 }
 
-.partner{
-
+.partner>.container{
+    max-width: 910px;
+    width: 100%;
 }
 
 .partner dl>dt{
@@ -566,10 +568,9 @@ border-top: 1px solid #808080;
 
 .company-info{
 border-top: 1px solid #8d8d8d;
-padding-top: 15px;
-}
+padding-top: 15px;margin-bottom: 20px;}
 
-.company-info ul>li {
+.company-info a {
     margin-left: 10px;
     margin-right: 5px;
 }
@@ -584,12 +585,17 @@ padding-bottom: 30px;
     color: #fff;
 }
 
+.web-info .container,
+.company-info .container{
+    width: 1080px;
+}
+
 .firend-link{
 
 }
 
-.firend-link>li {
-    font-size: 40px;
+.firend-link>a {
+    font-size: 45px;
     padding-right: 20px;
 }
 
@@ -605,6 +611,7 @@ padding-bottom: 30px;
     content: "\e946";
     border-right: 1px dashed;
     padding-right: 10px;
+    padding-left: 10px;
 }
 
 .icon-partner2::before{
@@ -665,8 +672,4 @@ padding-bottom: 30px;
     #web_banner .glyphicon-chevron-right::before {
         content: url(../img/right-arrow.png);
     }
-}
-
-@media screen and (max-width: 767px) {
-
 }
