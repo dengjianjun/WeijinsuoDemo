@@ -542,6 +542,85 @@ color: #333;
 /*******************************网站新闻样式结束*******************************/
 
 /*******************************网站尾部样式开始*******************************/
+#footer{
+border-top: 1px solid #808080;
+}
+
+#footer ul>li,#footer dl>dd{
+    float: left;
+    margin-right: 10px;
+}
+
+.partner{
+
+}
+
+.partner dl>dt{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.partner dl>dd{
+    font-size: 50px;
+}
+
+.company-info{
+border-top: 1px solid #8d8d8d;
+padding-top: 15px;
+}
+
+.company-info ul>li {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.web-info{
+background-color: #222;
+padding-top: 20px;
+padding-bottom: 30px;
+}
+
+.web-info h5 {
+    color: #fff;
+}
+
+.firend-link{
+
+}
+
+.firend-link>li {
+    font-size: 40px;
+    padding-right: 20px;
+}
+
+.icon-partner1,.icon-partner2{
+    color: #696969;
+}
+
+.icon-partner1:hover,.icon-partner2:hover{
+    color: #DF3232;
+}
+
+.icon-partner1::before{
+    content: "\e946";
+    border-right: 1px dashed;
+    padding-right: 10px;
+}
+
+.icon-partner2::before{
+    content: "\e92f";
+    padding-right: 10px;
+}
+
+.icon-firend1::before{
+    content: "\e93b";
+}
+
+.icon-firend1:hover{
+    color: #004098;
+    background-color: #fff;
+    border-color:#004098;
+}
 
 /*******************************网站尾部样式结束*******************************/
 
