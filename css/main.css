@@ -661,10 +661,6 @@ padding-bottom: 30px;
         background-repeat: no-repeat;
     }
 
-    #web_banner .carousel-inner .item > img {
-        display: none;
-    }
-
     #web_banner .glyphicon-chevron-left::before {
         content: url(../img/left-arrow.png);
     }

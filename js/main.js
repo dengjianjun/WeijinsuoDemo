@@ -14,7 +14,13 @@ $(function () {
         $(imgs).each(function () {
             var src=$(this).data(imgSrc);
             $(this).attr('src',src);
-            $(this).parent().css('backgroundImage',windowWidth>=768?'url('+src+')':'');
+            if(windowWidth>=768){
+                $(this).hide();
+                $(this).parent().css('backgroundImage','url('+src+')');
+            }else{
+                $(this).parent().css('backgroundImage','');
+                $(this).show();
+            }
         });
         resizeInvestNavWidth();
     }).trigger('resize');
